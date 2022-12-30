@@ -5,3 +5,5 @@
 - MySQL, Thymeleaf, Lombok, MyBatis
 - IntelliJ, DBeaver, GitHub, git, GitKraken, Notion, Slack, Postman, Swagger
 - **회원, 게시판, 상품, 결제** 기능 적용 예정
+
+fork Test by me
