@@ -3,10 +3,16 @@ package com.example.movie.mapper;
 import com.example.movie.dto.MemberDTO;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 @Mapper
 public interface MemberMapper {
-    MemberDTO selectLogin(MemberDTO memberDTO);
-    MemberDTO selectMemberDetail(String email);
-    int updateMemberName(MemberDTO memberDTO);
+    int signupMember(MemberDTO memberDTO);
+    MemberDTO loginUserIdPassword(MemberDTO memberDTO);
+    MemberDTO selectMemberDetail(String nickname);
     int updateMemberPassword(MemberDTO memberDTO);
+    int updateMemberName(MemberDTO memberDTO);
+    int updateIsMemberStatus(MemberDTO memberDTO);
+    List<MemberDTO> selectAllCustomers();
+    int memberStatus(MemberDTO memberDTO);
 }
