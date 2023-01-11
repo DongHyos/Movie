@@ -44,7 +44,7 @@ public class MapController {
 
         HttpEntity<Map<String, Object>> entity = new HttpEntity<>(request);
 
-        String url = "https://hooks.slack.com/services/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"; //복사한 Webhook URL 입력
+        String url = "url 값을 넣어주세요."; //복사한 Webhook URL 입력
 
         restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
     }

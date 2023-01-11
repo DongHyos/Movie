@@ -34,6 +34,14 @@ public class MyPageController {
 
         ArrayList<CommentDTO> commentList = cs.selectComment(memberDTO.getId());
 
+        log.info("memberDTO = {}", memberDTO);
+        log.info("orderList = {}", orderList);
+        log.info("order = {}", order);
+        log.info("movieDTO = {}", movieDTO);
+        log.info("theaterDTO = {}", theaterDTO);
+        log.info("commentList = {}", commentList);
+
+
         model.addAttribute("memberDTO", memberDTO);
         model.addAttribute("orderList", orderList);
         model.addAttribute("recentOrder", order);
